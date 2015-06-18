@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DevOps Introduction</title>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/serif.css" id="theme">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+        <section>
+          <h1>DevOps</h1>
+          <h4>2015/06/17</h4>
+          <!-- CODE BY JAKE & CHARLES -->
+        </section>
+        <section>
+            <section>
+                <h1>What is DevOps?</h1>
+            </section>
+            <section>
+                <p>A new term that primarily focuses on improving collaboration, communication and integration between <span class="highlight-text">software developer</span> and <span class="highlight-text">IT operations.</span></p>
+            </section>
+            <section><img style="height: 600px; width:auto; " src="images/devops_01.png"></section>
+        </section>
+        <section>
+          <section><h2>From Waterfall to Agile</h2></section>
+          <section>
+            <h2>Waterfall</h2>
+            <ul>
+              <li>100% of the system is defined <span class="highlight-text">before</span> development</li>
+              <li>Inflexible and monolithic</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Agile</h2>
+            <ul>
+              <li>Improved collaboration between <span class="highlight-text">business users</span> and <span class="highlight-text">developers</span></li>
+              <li>Software evolves iteratively</li>
+              <li>Continuous improvement and feedback</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Agile</h2>
+            <img style="height: 400px; width:auto; " src="images/devops_02.png">
+          </section>
+        </section>
+        <section>
+          <section><h2>From Agile to DevOps</h2></section>
+          <section>
+            <h2>DevOps</h2>
+            <ul>
+              <li>Agile development move downstream <span class="highlight-text">towards infrastructure</span></li>
+              <li>Improved collaboration between <span class="highlight-text">developers</span> and <span class="highlight-text">IT operators</span></li>
+              <li>More reliable and efficient in deploying applications</li>
+            </ul>
+          </section>
+          <section>
+            <h2>DevOps</h2>
+            <img style="height: 400px; width:auto; " src="images/devops_03.png">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>DevOps with application development</h2>
+            <ul>
+              <li>code building</li>
+              <li>testing</li>
+              <li>packaging</li>
+              <li>deployment</li>
+            </ul>
+          </section>
+          <section>
+            <h2>DevOps with infrastructure</h2>
+            <ul>
+              <li>provisioning</li>
+              <li>configuration</li>
+              <li>orchestration</li>
+              <li>deployment</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h2>Principals</h2>
+          <ul>
+            <li>infrastructure as code</li>
+            <li>continuous deployment</li>
+            <li>automation</li>
+            <li>monitoring</li>
+            <li>security</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Infrastructure as code</h2>
+          <ul>
+            <li>Code has <span class="highlight-text">version management</span></li>
+            <li>Same idea applies to <span class="highlight-text">infrastructure</span> provisioning</li>
+            <li>Define configuration in a declarative way</li>
+            <li>Configuration stored in a version management system</li>
+            <li>"Infrastructure code" used in provisioning, orchestration, and deployment</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Continuous Deployment</h2>
+          <ul>
+            <li>Automated deplayment of production-ready application code</li>
+            <li>Deploy code to <span class="highlight-text">different environment</span></li>
+            <li><span class="highlight-text">Automatically rolled back</span> on failure</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Automation</h2>
+          <ul>
+            <li>From setup, configuration to deployment and support</li>
+            <li>For application and infrastructure</li>
+            <li>Eliminate <span class="highlight-text">manual</span> processes</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Monitoring</h2>
+          <ul>
+            <li><span class="highlight-text">Feedback</span> help improve the communication and collaboration</li>
+            <li>Monitoring, alerting and Auditing infrastructure</li>
+            <li> ... and application (?) </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Security</h2>
+          <p>As title ... </p>
+        </section>
+        <section>
+          <section>
+            <h2>Tools - AWS</h2>
+          </section>
+          <section>
+            <h2>Infrastructure as code</h2>
+            <ul>
+              <li>AWS CloudFormation - model aws resources in json templates</li>
+              <li>AWS AMI (amazon machine image)</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Continuous Deployment</h2>
+            <ul>
+              <li>AWS CodeDeploy - deploy application to EC2 instances</li>
+              <li>AWS CodePipeline - design deployment workflow</li>
+              <li>AWS CodeCommit - basically private git server</li>
+              <li>AWS Elastic Beanstalk, AWS OpsWorks - store application version and configuration</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Automation</h2>
+            <ul>
+              <li>AWS Elastic Beanstalk - store application version and configuration</li>
+              <li>AWS OpsWorks - chef, application life cycle management, configurable application stack</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Monitoring</h2>
+            <ul>
+              <li>AWS CloudWatch - resource monitoring and alerting</li>
+              <li>AWS CloudTrail - logging activity to infrastructure</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Security</h2>
+            <ul>
+              <li>Identity and Access Management (IAM) </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Tools - Others</h2>
+          </section>
+          <section>
+            <h2>Virtualization Platforms</h2>
+            <ul><li>VMware</li><li>KVM</li><li>VirtualBox</li><li>Vagrant</li></ul>
+          </section>
+          <section>
+            <h2>Containerizaton Tools</h2>
+            <ul><li>LXC</li><li>Solaris</li><li>Docker</li></ul>
+          </section>
+          <section>
+            <h2>Test and Build Systems</h2>
+            <ul><li>Jenkins</li><li>Maven</li><li>Gradle</li></ul>
+          </section>
+          <section>
+            <h2>Configuration Management</h2>
+            <ul><li>Puppet</li><li>Chef</li><li>Ansible</li><li>SaltStack</li></ul>
+          </section>
+          <section>
+            <h2>Application Deployment</h2>
+            <ul><li>Capistrano</li><li>kubernetes</li></ul>
+          </section>
+          <section>
+            <h2>Monitoring, Alerting and Trending</h2>
+            <ul><li>New Relic</li><li>Nagios</li><li>Graphite</li></ul>
+          </section>
+          <section>
+            <h2>Process Supervisors</h2>
+            <ul><li>Monit</li><li>runit</li><li>blue pill</li></ul>
+          </section>
+          <section>
+            <h2>Logging</h2>
+            <ul><li>Paper Trail</li><li>Logstash</li></ul>
+          </section>
+          <section>
+            <h2>Security</h2>
+            <ul><li>Snorby Threat Stack</li><li>Tripwire</li></ul>
+          </section>
+        </section>
+        <section>
+          <h2>Short Conclusion</h2>
+          <ul>
+            <li>Goal: Improve communication and collaboration between teams</li>
+            <li>Infrastructure as code and version control</li>
+            <li>Automation on everything</li>
+            <li>Monitoring to provide more feedback</li>
+          </ul>
+        </section>
+    </div>
+  </div>
+
+  <script src="js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+      ]
+    });
+  </script>
+</body>
+</html>
